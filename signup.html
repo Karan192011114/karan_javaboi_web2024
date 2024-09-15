@@ -1,0 +1,51 @@
+<DOCTYPE html> 
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <title>Javaboi</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function redirectToLoginPage() {
+            // Replace "login.html" with the actual URL you want to redirect to
+            window.location.href = "login.html";
+        }
+    </script>
+    </head>
+    
+    <body>
+    
+       <header>
+           <h2 class="logo">Javaboi</h2>
+               <nav class="navigation"> <a href="#">Home</a>
+                     <a href="#">About</a>                
+                     <a href="#">Contact</a>
+                     <button class="btnlogin-popup" onclick="redirectToLoginPage()">Login</button>  
+    
+                </nav>
+      </header>
+    
+      <div class="wrapper">
+        <div class="form_box Login">
+            <h2>SIGNUP</h2>
+            <form action="signup_process.php" method="POST">
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="text" id="username" name="username" required>
+                    <lable for="username">Username</lable>
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="email" id="email" name="email" required>
+                    <lable>Email</lable>
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="password" id="password" name="password" required>
+                    <lable>Password</lable>
+                </div>
+                <button type="submit" class="btn">SIGNUP</button>
+            </form>
+        </div>   
+      </div>
+    </body>
